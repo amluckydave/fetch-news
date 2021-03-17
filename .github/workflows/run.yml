@@ -26,7 +26,6 @@ jobs:
           pip install -r requirements.txt
 
       - name: Fetch_NewMsg
-        env:
-          key='${{ secrets.KEY }}'
+        key='${{ secrets.KEY }}'
         run: "python -u main.py"
 
