@@ -11,7 +11,7 @@ schSign = 0
 departSign = 0
 key = input()  # server酱推送
 
-# -----------------------------------------------------------------
+# ----------------------------------------------------------------
 # timeStr_School = bj_time.strftime("%m-%d")
 timeStr_School = "12-17"
 
@@ -31,7 +31,7 @@ if timeStr_School in result:
     pattern_title0 = re.compile(r'<span>' + timeStr_School + '</span>.*>(.+)</a>')
     msgList_School = (re.findall(pattern_title0, data))
 
-# -----------------------------------------------------------------
+# ----------------------------------------------------------------
 
 timeStr_Department = bj_time.strftime("%Y-%m-%d")
 
