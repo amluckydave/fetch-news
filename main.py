@@ -33,8 +33,7 @@ if timeStr_School in result:
 
 # -----------------------------------------------------------------
 
-# timeStr_Department = bj_time.strftime("%Y-%m-%d")
-timeStr_Department = "2020-06-24"
+timeStr_Department = bj_time.strftime("%Y-%m-%d")
 
 headers1 = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36 Edg/89.0.774.54',
