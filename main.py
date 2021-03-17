@@ -12,8 +12,7 @@ departSign = 0
 key = input()  # server酱推送
 
 # ----------------------------------------------------------------
-# timeStr_School = bj_time.strftime("%m-%d")
-timeStr_School = "12-17"
+timeStr_School = bj_time.strftime("%m-%d")
 
 headers0 = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36 Edg/89.0.774.54',
