@@ -19,11 +19,11 @@ url0 = 'https://aerospace.xmu.edu.cn/jwxx/yjsjw.htm'
 data0 = requests.get(url0, headers=headers0).content.decode('utf-8')
 
 pattern0 = re.compile(r'<span>(.*)</span>')
-result = (re.findall(pattern0, data0))[1]
+result0 = (re.findall(pattern0, data0))[1]
 
-if result == timeStr_School:
+if result0 != timeStr_School:
     schSign = 1
-    pattern_title0 = re.compile(r'<span>' + result + '</span>.*>(.+)</a>')
+    pattern_title0 = re.compile(r'<span>' + result0 + '</span>.*>(.+)</a>')
     msgList_School = (re.findall(pattern_title0, data0))
 
 # -----------------------------------------------------------------
@@ -34,7 +34,7 @@ pattern1 = re.compile(r'\w{4}-\w{2}-\w{2}')
 result1 = (re.findall(pattern1, data1))
 newsNum = result1.count(result1[0])
 
-if result1[0] == timeStr_Department:
+if result1[0] != timeStr_Department:
     departSign = 1
     pattern_title1 = re.compile('<a.*?href=.*?>(.{5,})(?=</a>\r\n)')
     msgList_Department = (re.findall(pattern_title1, data1))[:newsNum]
